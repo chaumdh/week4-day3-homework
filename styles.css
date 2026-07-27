@@ -59,6 +59,7 @@ li a:active {
 main {
     margin: 0 10%;
     color: var(--color5);
+    min-height: fit-content;
 }
 main h1 {
     text-align: center;
