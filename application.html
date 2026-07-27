@@ -34,18 +34,17 @@
                     <legend>Your information</legend>
                     <label>Enter your full name</label>
                     <input type="text" name="name">
-                    <label>Enter your email</label>
-                    <input type="email" name="email">
-                    <label>Enter your phone</label>
-                    <input type="text" name="phone">
                     <label>Select your gender</label>
                     <input type="radio" name="gender" value="male" />Male
                     <input type="radio" name="gender" value="female" />Female
                     <label>How should we contact you?</label>
-                    <select>
-                        <option>Email</option>
-                        <option>Phone</option>
+                    <select id="contact-method">
+                        <option id="email-option" name="email">Email</option>
+                        <option id="phone-option" name="phone">Phone</option>
                     </select><br />
+                    <label id="contact-label"></label>
+                    <input id="contact-input">
+                    <br />
                     <br />
                     <legend>Application details</legend>
                     <label>Enter the chosen pet's name</label>
@@ -73,6 +72,8 @@
 
     </div> <!-- End Container -->
 
+    <!-- Drop Down -->
+    <script src="js/application.js"></script>
 </body>
 
 </html>
