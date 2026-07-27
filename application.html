@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Pet Adoption Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Container to wrap everything -->
+    <div id="container">
+
+        <!-- Brand of website -->
+        <header>
+            <h3>Animal Shelter</h3>
+            <!-- Main Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- index -->
+                    <li><a href="about.html">Available pets</a></li> <!-- Page 2 -->
+                    <li><a href="application.html">Adoption Application</a></li> <!-- Page 3 -->
+                    <li><a href="gallery.html">Gallery</a></li> <!-- Page 4 -->
+                </ul>
+            </nav> <!-- End Main Navigation -->
+        </header>
+        
+
+        <!-- Main Content -->
+        <main>
+            <h1>Apply to adopt a pet</h1>
+            <p>Submit your application to adopt a pet from our shelter.</p>
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>Your information</legend>
+                    <label>Enter your full name</label>
+                    <input type="text" name="name">
+                    <label>Enter your email</label>
+                    <input type="email" name="email">
+                    <label>Enter your phone</label>
+                    <input type="text" name="phone">
+                    <label>Select your gender</label>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female
+                    <label>How should we contact you?</label>
+                    <select>
+                        <option>Email</option>
+                        <option>Phone</option>
+                    </select><br />
+                    <br />
+                    <legend>Application details</legend>
+                    <label>Enter the chosen pet's name</label>
+                    <input type="text" name="pet-name">
+                    <label>Enter the chosen pet's age</label>
+                    <input type="text" name="pet-age">
+                    <label>What is the chosen pet's sex?</label>
+                    <input type="radio" name="pet-sex" value="male" />Male
+                    <input type="radio" name="pet-sex" value="female" />Female
+                    <label>Enter the chosen pet's breed</label>
+                    <input type="text" name="pet-breed">
+                    <label>Enter the chosen pet's color</label>
+                    <input type="text" name="pet-color">
+                    <label>Tell us what you like about the chosen pet and how you will be a good fit:</label>
+                    <textarea rows="5" cols="30"></textarea>
+                    <input type="submit" value="Submit application" />
+                </fieldset>
+            </form>
+
+            
+        </main> <!-- End Main Content -->
+
+        <!-- Footer Information -->
+        <footer>&copy; Copyright 2020</footer>
+
+    </div> <!-- End Container -->
+
+</body>
+
+</html>
